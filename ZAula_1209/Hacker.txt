@@ -1,0 +1,14 @@
+rommon 1 >confreg 0x2142
+rommon 2 >reset
+Router >ena
+Router#copy startap-config
+
+isr4300-universalk9.16.06.04.SPA.bin
+
+
+/* LOUSA */
+
+switch>ena
+switch#conft
+switch(config)#int gio/1
+switch(config)#spanning-tree portfast

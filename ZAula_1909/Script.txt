@@ -1,0 +1,106 @@
+ena
+conf t
+int vlan 1
+ip address 192.168.5.0 255.255.255.0
+no shut
+exit //x3
+
+ciscoe (ena)
+ciscot (telnet)
+
+=======================================================
+
+SP
+
+ena
+conf t
+hostname SP
+int gi0/0/0
+ip address 192.168.10.0 255.255.255.0
+no shut
+int gi0/0/1
+no shut
+enable secret ciscoe
+line vty 0 15
+password ciscot
+login
+line console 0
+password ciscoc
+login
+end
+copy run star
+
+======================================================
+
+RJ
+
+ena
+conf t
+hostname RJ
+int gi0/0/0
+ip address 192.168.5.2 255.255.255.0
+no shut
+int gi0/0/1
+no shut
+enable secret ciscoe
+line vty 0 15
+password ciscot
+login
+line console 0
+password ciscoc
+login
+end
+copy run star
+
+=========================================================
+
+MG
+
+ena
+conf t
+hostname MG
+int vlan 1
+ip address 192.168.5.3 255.255.255.0
+no shut
+enable secret ciscoe
+line vty 0 15
+password ciscot
+login
+line console 0
+password ciscoc
+login
+end
+copy run star
+
+============================================================
+
+Estou no pc/note, acessando por tel (a distancia)
+
+telnet 192.168.5.1
+Password:
+ena
+terminal monitor
+conf t
+logging 192.168.5.100
+logging on
+logging trap debugging
+
+==============================================================
+
+Comandos Perdidos
+
+/*Ativa a hora*/
+service timestamps log datetime msec
+
+/*Ve a hora*/
+show clock
+
+/*Seta hora*/
+clock set 21:00:00 08 sep 2023
+
+/*Save*/
+copy running-config startup-config
+
+/*Configuração*/
+conf t
+ntp server 192.168.5.100

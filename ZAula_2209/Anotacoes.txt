@@ -1,0 +1,5 @@
+
+ena
+show int fa0/1
+
+Qual a diferença de segurança entre o SNMPv1, SNMPv2c e SNMPv3? E como cada um deles lida com possíveis ataques?

@@ -1,0 +1,18 @@
+Roteamento => Caminhos
+     |            |
+Estático	Dinamico
+     |            ↓
+     웃      Protocolo de roteamento
+		  ↑
+	 (Ataques) (Segurança)				OSPF (Internet)
+							BGP  (Internet)
+
+IPSEC (Criptografa na camada de rede)
+
+
+    ↗ Tela ⇛ Terminal (console)
+LOG → RAM → Finita
+    ↘ Arquivos ⇛ syslog ⇛ UDP 514
+
+HTTP ⇛ TCPI80
+

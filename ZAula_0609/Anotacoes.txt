@@ -1,0 +1,64 @@
+				*Cap - 4*
+
+	  -Camada física-
+   Cobre	Luz	  Microondas
+  Eletrico  Fibra Optica   Sem fio
+
+Camada fisíca => bits -----> Destino
+		      "Levar"
+
+
+Padroes IEEE (mais falado) and TIA/EIA
+
+ASC11
+
+8bits => 1 byte
+
+Codificação Manchester => Cabo consial?
+
+00011110 //ruim
+
+01010010 //bom
+
+				*Escritas*
+
+-Latência
+
+O termo latência se refere ao tempo necessário para os dados viajarem de um ponto a outro, incluindo atrasos.
+
+-Taxa de transferência
+
+Taxa de transferência é a medida da transferência de bits através da mídia durante um determinado período.
+
+Cabo UTP (Nao Blindado), Cabo STP (Blindado)
+
+-Fibra
+
+Fibra monomodo e Fibra multimodo
+
+Fibra monomodo -> 3Km, Nucleo 9 microns
+Fibra multimodo -> 2Km, Nucleo 50/62,5 microns
+
+				*Curiosidade*
+A fibra óptica é comumente usada para interconectar dispositivos de rede.
+
+
+
+
+
+
+
+
+
+
+
+			*Segurança*
+
+Senha do ena view = ciscoe
+
+>conf t
+>aaa new-model
+>exit
+>enable view
+Password: ciscoe
+

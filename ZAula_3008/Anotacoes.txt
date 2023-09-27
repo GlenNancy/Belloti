@@ -1,0 +1,112 @@
+/* OS DOIS UNTOS */
+
+DNS -> Tradução do nome pra IP (ping www.uol.com.br) 
+
+SERVER DHCP -> que da IP pra maquina
+
+
+*UM ATAQUE A um servidor 	DHCP
+				DNS
+	
+			/--- 3.3.3/4 ---\
+
+	*CONFIGURAÇÃO DE IP AUTOMATICO
+
+IPV4 32 bit 			=> 2 elevado a 32
+IPV6 128 bit (é bem maior)  	=> 2 elevado a 128 //ipv6 10 anos já que existe
+
+IoT (Internet das coisas)
+
+	*E-MAIL
+	
+SMTP -> Enviar email
+POP3 -> Receber email
+IMAP -> Acessa os seus emails mas continua no servidor (Mais interessante utilizar o IMAP)
+
+	TRANFERENCIA DE ARQUIVOS
+
+FTP -> Preciso colocar um usuario e senha (Internet usa FTP)
+SFTP -> Roda em cima do ssh (criptografia) mais segurança (Transferencia de arquivo)
+TFTP -> Já não precisa (protocolo pra rodar numa rede local)
+
+	*SERVIÇOS WEB
+
+REST => jeito mais simples de ter uma comunicação
+	
+	*IP
+
+NAT -> Tradução de endereço de rede (Traduzir o IP pelo IP de internet e quando volta, destraduz)
+				    (Ele faz uma amarração com uma porta para saber qual é minha)
+
+Problema -> Segurança (log para ver quem pertencia tal IP), falta autenticação com usuario e senha
+
+	*IP Privado/Publico
+
+-Privado não acesa internet 192.168, 172.16, 31 (Precisa do NAT)
+-Publico acesa
+
+			/--- LOUSA ---\
+
+	*TCP
+Controle de fluxo
+Verificação de erro e pedir retransmição
+Sequencia
+Fim-a-Fim
+
+Confiabilidade
+
+Utilizo transmição? de dados segurança
+
+	*UDP
+já não faz o que o TCP faz
+
+Video
+Voz
+
+se fizesse aumentaria muito a latência (Origem - destino)
+
+Utilizo para execução rapida
+
+NAT (Multiplica IP) por exemplo a escola vai ter um IP NAT e com isso todos os IPs utilizados podem acesar a internet ao inves de cada IP acesar 
+
+			/--- 3.3.5 ---\
+
+TCP/IP não tem protocolo
+___________________
+| (7) 		  |
+|     Aplicação	  |
+|		  |
+------------------|
+|	(4)	  |
+|    Transporte   |
+|		  |
+-------------------
+|	(3)	  |
+|     Internet    |
+|		  |
+-------------------
+
+		DNS
+-Amarra o IP com o nome
+
+		ARP (3)
+-Amarra o IP com o mac address
+
+			
+-------------------------------------------- /* SEGURANÇA */ --------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

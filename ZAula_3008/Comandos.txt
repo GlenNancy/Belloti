@@ -1,0 +1,23 @@
+ena
+conf t
+username user0 privilege 0 secret 12345
+username user1 privilege 1 secret 12345
+username user15 privilege 15 secret 12345
+
+hostname R1
+enable secret ciscoe
+
+line console 0
+login local
+
+enable secret level 1 cisco
+
+username user5 privilege 5 secret 12345
+enable secret level 5 cisco
+
+
+privilege exec level 5 reload
+
+end
+
+copy run star

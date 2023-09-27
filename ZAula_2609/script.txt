@@ -1,0 +1,44 @@
+ena
+conf t
+hostname HAS
+int gi0/0/0
+ip address 192.168.10.1 255.255.255.0			//No router0
+no shut
+int gi0/0/1
+ip address 192.168.20.1 255.255.255.0
+no shut
+
+
+ena
+conf t
+hostname Andar1
+int vlan 1						// no switch
+ip address 192.168.10.2 255.255.255.0
+no shut
+
+
+ena
+conf t
+hostname Andar2						// no switch
+int vlan 1
+ip address 192.168.20.2 255.255.255.0
+no shut
+
+
+
+
+enable secret ciscoe
+line console 0
+password ciscoc
+login
+line vty 0 15
+password ciscot
+login
+service password-encry
+banner motd $Cuidado! Acesso controlado$
+exit
+copy run start
+
+//comando novo 
+
+show ip route
